@@ -304,15 +304,21 @@ margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio_list_item{
-  height: 404px;
-  border: 1px solid #EEEEEE;
+.portfolio_list_item:not(:nth-child(3n)){
+  margin-right: 30px;
 }
+.portfolio_list_item:not(:nth-child(n+6)){
+  margin-bottom: 30px;
+}
+
 .portfolio_list{
   background-color: #fff;
 }
 .item_description{
 padding: 24px 20px;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
 }
 .list_title{
   font-weight: 700;
