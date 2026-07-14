@@ -351,21 +351,22 @@ margin-right: 30px;
 
 /* ======================= footer ======================= */
 .footer {
+
   background-color:#2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer_first_part{
+.footer .container{
   display: flex;
   align-items: baseline;
 }
+.footer_first_part{
+  margin-right: 70px;
+}
 .footer_second_part{
-  display: flex;
+
 }
-.footer .logo.link{
-  margin-right: 156px;
-  /* display: flex; */
-}
+
 
 .footer_list_link{
   font-style: normal;
@@ -389,6 +390,7 @@ margin-right: 30px;
   color: #fff;
 }
 .footer_text{
+  margin-bottom: 20px;
   align-content:  baseline;
   font-family: Roboto;
     font-weight: 700;
@@ -422,9 +424,7 @@ margin-right: 30px;
   width: 20px;
   height: 20px;
 }
-.address{
-  margin-right: 100px;
-}
+
 /* ======================================portfolio====================================== */
 .portfolio_buttons_list{
   display: flex;
