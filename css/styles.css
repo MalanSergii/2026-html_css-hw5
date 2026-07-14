@@ -77,6 +77,9 @@ section{
 }
 /* =========== header ============= */
 .header{
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   border-bottom: 1px solid #ECECEC;
 }
 .header .container{ 
@@ -96,6 +99,7 @@ section{
   align-items: center;
   margin-right: auto;
 }
+
 
 .logo{
   font-family: Raleway, sans-serif;
@@ -120,18 +124,34 @@ section{
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  .nav-link{
-    color: var(--prime-color);
-    text-decoration: none;
-  }
-  .nav-link:hover,
-  .nav-link:focus{
-    color: var(--accent-color);
-  }
+
+ 
+}
+.nav-link{
+  text-decoration: none;
+  color: var(--prime-color)
+}
+.nav-link:hover{
+  color:var(--accent-color)
 }
 .nav-item:not(:last-child){
   margin-right: 50px;
 }
+.header-contacts-link {
+  display: flex;
+  align-items: center;
+}
+.header-icon{
+  display: block;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+.smartphone{
+  width: 10px;
+  height: 16px;
+}
+
 .header-contacts{
   display: flex;
   align-items: center;
@@ -147,11 +167,22 @@ section{
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
+.header-contacts-link:hover .header-icon {
+  fill: var(--accent-color);
+}
+
+
 /*============== hero styles ============== */
 .hero{
-  background-color: #2F303A;
+  display: block;
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #C4C4C4;
+  background-image:  linear-gradient(rgba(47, 48, 58, 0.4)),url(../images/main/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 200px 330px;
 }
@@ -177,8 +208,24 @@ section{
 .features_list{
   display: flex;
   padding-bottom: 94px;
-  /* padding: 94px 0; */
 }
+.image-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.item-image{
+  width: 70px;
+  height: 70px;
+}
+
+
 
 .features_list_item:not(:last-child){
   margin-right: 30px;
