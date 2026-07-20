@@ -79,17 +79,14 @@ section{
 /* =========== header ============= */
 .header{
   max-width: 1600px;
-  min-height: 80px;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid #ECECEC;
 }
 .header .container{ 
  display: flex;
- padding-top: 24px;
- padding-bottom: 24px;
-
 }
+
 .section_title{
   font-weight: 700  ;
   font-size: 36px;
@@ -126,32 +123,64 @@ section{
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
+}
 
- 
+.nav-item{
+  position: relative;
 }
+
 .nav-link{
+  display: block;
   text-decoration: none;
-  padding-top:15px;
-  padding-bottom: 15px;
-  color: var(--prime-color)
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--prime-color);
+  transition: color 250ms linear;
 }
-.nav-link:hover{
-  color:var(--accent-color)
+
+.nav-link:hover ,
+.nav-link:focus {
+  color:var(--accent-color);
+  
 }
+
+.main_paige_link::after{
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color)
+}
+
+.portfolio_page_link::after{
+    content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: -2px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color)
+}
+
 .nav-item:not(:last-child){
   margin-right: 50px;
 }
+
 .header-contacts-link {
   display: flex;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
+
 .header-icon{
   display: block;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  transition: fill 250ms var(--cubic);
 }
 .smartphone{
   width: 10px;
@@ -169,13 +198,18 @@ section{
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
+  padding: 32px 0;
   color: var(--secondary-color);
+  transition: color 250ms var(--cubic);
+  
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--accent-color);
 }
-.header-contacts-link:hover .header-icon {
+
+.header-contacts-link:hover .header-icon,
+.header-contacts-link:focus .header-icon{
   fill: var(--accent-color);
 }
 
@@ -315,7 +349,8 @@ margin-right: 30px;
   width: 44px;
   height: 44px;
 }
-.link-img-box:hover .link-img, .link-img-box:focus .link-img
+.link-img-box:hover .link-img,
+.link-img-box:focus .link-img
 {
   fill: var(--accent-color);
 }
