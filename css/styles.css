@@ -349,8 +349,9 @@ margin-right: 30px;
   width: 44px;
   height: 44px;
 }
-.link-img-box:hover .link-img,
-.link-img-box:focus .link-img
+
+.team-link:hover .link-img,
+.team-link:focus .link-img
 {
   fill: var(--accent-color);
 }
@@ -359,6 +360,7 @@ margin-right: 30px;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
+  transition: fill 250ms var(--cubic);
 }
 /* ======================= our-clients ================== */
 .client_list{
@@ -373,12 +375,15 @@ margin-right: 30px;
   width: 170px;
   height: 92px;
   border: 1px solid#AFB1B8;
-  border-radius:4px 
+  border-radius:4px;
+  transition: border  250ms var(--cubic);
 } 
-.client_list_link:hover ,.client_list_link:focus{
+.client_list_link:hover ,
+.client_list_link:focus{
   border: 1px solid var(--accent-color);
 }
-.client_list_link:hover .client_img, .client_list_link:focus .client_img{
+.client_list_link:hover .client_img,
+.client_list_link:focus .client_img{
   fill: var(--accent-color);
 }
 
@@ -387,6 +392,7 @@ margin-right: 30px;
   width: 106px;
   height: 60px;
   fill:#AFB1B8;
+  transition: fill  250ms var(--cubic);
 }
 
 /* ======================= footer ======================= */
@@ -400,13 +406,10 @@ margin-right: 30px;
   display: flex;
   align-items: baseline;
 }
+
 .footer_first_part{
   margin-right: 70px;
 }
-.footer_second_part{
-
-}
-
 
 .footer_list_link{
   font-style: normal;
@@ -414,14 +417,16 @@ margin-right: 30px;
   font-size: 14px;
   line-height: 2;
   color:hsl(0, 0%, 100%,0.6);
-
+  transition: color 250ms var(--cubic);
 }
 .footer_list_item:not(:last-child){
   margin-bottom: 12px;
 }
-.footer_list_link:hover{
+.footer_list_link:hover, 
+.footer_list_link:focus{
   color:var(--accent-color)
 }
+
 .footer .logo{
   display: block;
   margin-bottom: 28px;
@@ -448,8 +453,10 @@ margin-right: 30px;
   border-radius: 50px;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms var(--cubic );
 }
-.social_link:hover{
+.social_link:hover, 
+.social_link:focus{
   background-color: var(--accent-color);;
 }
 .social_list_item{
@@ -488,6 +495,7 @@ margin-right: 30px;
   border: inherit;
   cursor: pointer;
   background-color:#F5F4FA;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 .portfolio_buttons_item button:hover,
 .portfolio_buttons_item button:focus{
@@ -500,9 +508,10 @@ margin-right: 30px;
 }
 .cards_list_link{
   display: block;
+  transition: box-shadow 250ms var(--cubic);
 }
-.cards_list_link:hover{
-
+.cards_list_link:hover, 
+.cards_list_link:focus{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
