@@ -524,12 +524,13 @@ background-color: rgba(47, 48, 58, 0.8);
 .cards_list{
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .cards_list_link{
   display: block;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+  /* height: 100%; */
+  /* position: relative; */
+  /* overflow: hidden; */
   transition: box-shadow 250ms var(--cubic);
 
 }
@@ -540,18 +541,19 @@ background-color: rgba(47, 48, 58, 0.8);
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
 }
-.cards_list_link:hover .overlay_text, .cards_list_link:focus .overlay_text{
+.cards_list_link:hover .overlay_text, 
+.cards_list_link:focus .overlay_text{
   transform: translateY(-100%);
 }
 .portfolio_list_item{
-  width: 370px;
+  /* width: 370px; */
 }
-.portfolio_list_item:not(:nth-child(3n)){
-  margin-right: 30px;
+.portfolio_list_item{
+  margin: 15px;
 }
-.portfolio_list_item:not(:nth-child(n+6)){
+/* .portfolio_list_item:not(:nth-child(n+6)){
   margin-bottom: 30px;
-}
+} */
 
 .portfolio_list{
   background-color: #fff;
